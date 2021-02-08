@@ -1,0 +1,53 @@
+.modes-page {
+  background: #974108;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modes-page .mode-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px;
+}
+
+.modes-page .mode-container img {
+  background: white;
+  height: 500px;
+  padding: 25px;
+  border: solid black 5px;
+}
+
+@media (max-width: 600px) {
+  .modes-page .mode-container {
+    width: 100%;
+  }
+  .modes-page .mode-container img {
+    width: 250px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=home.css.map */

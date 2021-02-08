@@ -1,0 +1,30 @@
+@import './variables';
+
+.modes-page{
+    background:rgb(151, 65, 8);
+    @include flexbox(space-evenly,row);
+    flex-wrap:wrap;
+    .mode-container{
+        @include flexbox(space-evenly,column);
+        margin:100px;
+        img{
+            background:white;
+            height:500px;
+            padding:25px;
+            border:solid black 5px;
+        }
+    }
+}
+
+
+@media (max-width:600px){
+    .modes-page{
+        .mode-container{
+            width:100%;
+            img{
+                width:250px;
+                height:auto;
+            }
+        }
+    }
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react'
+import {v4 as uuidv4} from 'uuid'
+import Home from './HomeComponents/Home'
+import Modes from './HomeComponents/Modes'
+import Login from './LoginComponents/Login'
+import Signup from './LoginComponents/Signup'
+import {LoggedContext} from './Context/LoggedContext'
+import {UserContext} from './Context/UserContext'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    const [isLoggedIn,setIsLoggedIn] = useState(false)
+    const [users,setUsers] = useState([
+        {
+            id:uuidv4(),
+            username:"Admin",
+            password:'111'
+        }
+    ])
+
+    return(
+        <>
+        <Router>
+            <UserContext.Provider value={[users,setUsers]}>
+            <LoggedContext.Provider value={[isLoggedIn,setIsLoggedIn]}>
+            <Route  path="/" exact component={Home} />
+            <Route path="/modes" component={Modes} />
+            <Route path="/login" component={Login} />
+            <Route  path="/signup"  component={Signup} />
+            </LoggedContext.Provider>
+            </UserContext.Provider>
+        </Router>
+        </>
+    )
 }
-
-export default App;

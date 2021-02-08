@@ -1,0 +1,25 @@
+@import './variables';
+
+.nav-container{
+    @include flexbox(flex-end,row);
+    min-height:10vh;
+    background:burlywood;
+    nav {
+        @include flexbox(space-between,row);
+        width:50%;
+        .logo-container{
+            @include flexbox(center,row);
+            .logo{
+                border:solid black 2px;
+            }
+        }
+        .nav-links-container{
+            @include flexbox(center,column);
+            width:30%;
+            .nav-links{
+                text-decoration: none;
+                color:black;
+            }
+        }
+    }
+}
