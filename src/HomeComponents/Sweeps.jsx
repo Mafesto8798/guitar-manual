@@ -1,5 +1,6 @@
 import React from 'react'
 import Pattern from './Pattern'
+import Nav from './Nav'
 import {v4 as uuidv4} from 'uuid'
 
 
@@ -53,10 +54,13 @@ const sweeps = [
 
 
     return (
+        <>
+        <Nav />
         <div className="modes-page">
             {sweeps.map(pattern => (
                 <Pattern pattern={pattern} />
             ))}
         </div>
+        </>
     )
 }
