@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import {v4 as uuidv4} from 'uuid'
 import Home from './HomeComponents/Home'
+import Sweeps from './HomeComponents/Sweeps'
 import Modes from './HomeComponents/Modes'
 import Login from './LoginComponents/Login'
 import Signup from './LoginComponents/Signup'
@@ -25,6 +26,7 @@ export default function App(){
             <LoggedContext.Provider value={[isLoggedIn,setIsLoggedIn]}>
             <Route  path="/" exact component={Home} />
             <Route path="/modes" component={Modes} />
+            <Route path="/sweeps" component={Sweeps} />
             <Route path="/login" component={Login} />
             <Route  path="/signup"  component={Signup} />
             </LoggedContext.Provider>

@@ -4,13 +4,13 @@ import {v4 as uuidv4} from 'uuid'
 import Mode from './Mode'
 
 const modes = [
-    {id:uuidv4(),name:"Ionian",img:"Ionian.png",info:"Major Scale :)"},
-    {id:uuidv4(),name:"Dorian",img:"Dorian.png",info:"Dorian Scaale :)"},
-    {id:uuidv4(),name:"Phrygian",img:"Phrygian.png",info:"Fridge Scaale :)"},
-    {id:uuidv4(),name:"Lydian",img:"Lydian.png",info:"Lid Scaale :)"},
-    {id:uuidv4(),name:"Mixolydian",img:"Mixolydian.png",info:"MixoLid Scaale :)"},
-    {id:uuidv4(),name:"Aeolian",img:"Aeolian.png",info:"Aeolian Scaale :)"},
-    {id:uuidv4(),name:"Locrian",img:"Locrian.png",info:"Locrian Scaale :)"}
+    {id:uuidv4(),name:"Ionian",img:"Modes/Ionian.png",info:"Major Scale :)"},
+    {id:uuidv4(),name:"Dorian",img:"Modes/Dorian.png",info:"Dorian Scaale :)"},
+    {id:uuidv4(),name:"Phrygian",img:"Modes/Phrygian.png",info:"Fridge Scaale :)"},
+    {id:uuidv4(),name:"Lydian",img:"Modes/Lydian.png",info:"Lid Scaale :)"},
+    {id:uuidv4(),name:"Mixolydian",img:"Modes/Mixolydian.png",info:"MixoLid Scaale :)"},
+    {id:uuidv4(),name:"Aeolian",img:"Modes/Aeolian.png",info:"Aeolian Scaale :)"},
+    {id:uuidv4(),name:"Locrian",img:"Modes/Locrian.png",info:"Locrian Scaale :)"}
 ]
 
 

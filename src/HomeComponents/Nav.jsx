@@ -12,12 +12,6 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className="nav-links-container">
-                <Link to="/login" className="nav-links">
-                <h1>Log In</h1>
-                </Link>
-                <Link to="/signup" className="nav-links">
-                <h1>Sign Up</h1>
-                </Link>
                 </div>
             </nav>
         </div>

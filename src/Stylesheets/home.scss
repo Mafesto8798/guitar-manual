@@ -1,1 +1,28 @@
 @import './modes';
+@import './variables';
+
+
+.home-container{
+    @include flexbox(center,column);
+    .home-title{
+        h1{
+            font-size:4rem;
+            font-family: 'Lobster', cursive;
+            color:white;
+            position:absolute;  
+            top:400px;
+            left:200px;
+        }
+
+        img{
+            width:100%;
+            height:800px;
+            object-fit:cover;
+        }
+    }
+    button{
+        width:200px;
+        height:100px;
+        margin:200px;
+    }
+}
